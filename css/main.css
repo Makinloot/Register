@@ -1,0 +1,14 @@
+:root {
+    --clr-black: #000;
+    --clr-blue: rgb(0, 119, 255);
+
+    --font-big: 1.25rem;
+    --font-medium: .875rem;
+    --font-small: .625rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
