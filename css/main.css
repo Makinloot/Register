@@ -12,3 +12,32 @@
     box-sizing: border-box;
     font-size: 100%;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: 
+    linear-gradient(rgb(210, 252, 255), rgb(238, 170, 255));
+}
+.container {
+    width: min(100%, 662px);
+}
+.wrapper {
+    min-height: 492px;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 31.27% 1fr;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.14);
+}
+.box {
+    position: relative;
+    background-color: #fff;
+}
+.background__box {
+    background-color: darkblue;
+}
+.form__box {
+    
+}
