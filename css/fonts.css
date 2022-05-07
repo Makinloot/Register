@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'metrophobic';
-    src: url('../fonts/Metrophobic-Regular.woff2') format('woff2'),
-        url('../fonts/Metrophobic-Regular.woff') format('woff'),
-        url('../fonts/Metrophobic-Regular.ttf') format('truetype');
+    font-family: 'metropolis';
+    src: url('../fonts/Metropolis-Regular.woff2') format('woff2'),
+        url('../fonts/Metropolis-Regular.woff') format('woff'),
+        url('../fonts/Metropolis-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis-thin';
+    src: url('../fonts/Metropolis-Thin.woff2') format('woff2'),
+        url('../fonts/Metropolis-Thin.woff') format('woff'),
+        url('../fonts/Metropolis-Thin.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }

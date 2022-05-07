@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Register</title>
-</head>
-<body>
-
+  </head>
+  <body class="flex">
     <div class="container">
+      <div class="wrapper">
+        <div class="box background__box"></div>
 
-        <div class="wrapper">
-            
-            <div class="box background__box"></div>
-            <div class="box form__box">
+        <div class="box form__box">
+          <div class="get-started">
+            <h2>Let's get started!</h2>
+            <h4>Create an account to get all features</h4>
+          </div>
 
+          <form class="form__wrapper" action="#" method="post">
+            <div class="input__wrapper flex">
+              <input
+                class="input input__first-name"
+                type="text"
+                placeholder="First name"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
+              <input
+                class="input input__last-name"
+                type="text"
+                placeholder="Last name"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
             </div>
+            <div class="input__wrapper">
+              <input
+                class="input input__email"
+                type="email"
+                placeholder="Email address"
+                spellcheck="false"
+                required
+              />
+            </div>
+            <div class="input__wrapper">
+              <input
+                class="input input__password"
+                type="password"
+                placeholder="Create password"
+                autocomplete="off"
+                spellcheck="false"
+                required
+              />
+            </div>
+            <input type="submit" value="Create account">
+          </form>
 
+          <div class="sign-in flex">
+            <p>Already have an account?</p>
+            <a href="#">Sign in</a>
+          </div>
         </div>
-
+      </div>
     </div>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
