@@ -1,6 +1,6 @@
 :root {
     --clr-black: #000;
-    --clr-blue: rgb(0, 119, 255);
+    --clr-blue: rgb(65, 154, 255);
 
     --primary-font: 'montserrat';
     --secondary-font: 'metropolis';
@@ -18,11 +18,12 @@
     box-sizing: border-box;
     font-size: 100%;
     font-family: var(--primary-font);
+    text-decoration: none;
 }
 body {
     min-height: 100vh;
     background-image: 
-    linear-gradient(rgb(210, 252, 255), rgb(238, 170, 255));
+    linear-gradient(90deg, rgb(184, 247, 252), rgb(238, 170, 255));
 }
 h2 {
     font-family: var(--secondary-font);
@@ -40,7 +41,7 @@ h4 {
     align-items: center;
 }
 .container {
-    width: min(100%, 662px);
+    width: min(100% - 1rem, 662px);
 }
 .wrapper {
     min-height: 492px;
@@ -52,10 +53,13 @@ h4 {
 }
 .box {
     position: relative;
-    background-color: #fff;
+    background-color: #E5E5E5;;
 }
 .background__box {
-    background-color: darkblue;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .form__box {
     padding: 0 var(--padding-sides);
@@ -67,6 +71,7 @@ h4 {
 }
 
 .form__wrapper {
+    position: relative;
     margin: 0 0 100px 0;
     max-width: 275px;
     min-height: 160px;
@@ -76,11 +81,12 @@ h4 {
 }
 .input {
     width: 100%;
-    height: 21px;
+    height: 26px;
     margin: 1rem 0 0 0;
     padding: 4px;
     font-size: var(--font-small);
-    border: 1px solid;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: .2rem;
     outline: none;
 }
 ::placeholder {
@@ -91,11 +97,23 @@ h4 {
     margin: 0;
     width: 123px;
 }
-
+.button {
+    position: absolute;
+    right: 0;
+    margin: 1rem 0 0 0;
+    padding: .5rem .7rem;
+    font-size: var(--font-small);
+    color: #fff;
+    background-color: var(--clr-blue);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
 
 
 
 .sign-in {
     justify-content: flex-start;
+    gap: 6px;
     font-size: var(--font-small);
 }
