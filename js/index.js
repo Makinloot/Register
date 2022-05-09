@@ -10,22 +10,6 @@ const emailError = document.getElementById('email-error');
 const passwordError = document.getElementById('password-error');
 const confirmPasswordError = document.getElementById('confirm-password-error');
 
-// firstName.addEventListener('input', () => {
-//     validateInputFields(firstName, firstNameError);
-// });
-// lastName.addEventListener('input', () => {
-//     validateInputFields(lastName, lastNameError);
-// });
-// email.addEventListener('input', () => {
-//     validateInputFields(email, emailError);
-// });
-// password.addEventListener('input', () => {
-//     validateInputFields(password, passwordError);
-// });
-// confirmPassword.addEventListener('input', () => {
-//     confirmPsw(password, confirmPassword, confirmPasswordError);
-// })
-
 // validates input fields
 function validateInputFields(input, inputError) {
     if(!input.validity.valid) {
@@ -63,7 +47,7 @@ function submitForm() {
     form.addEventListener('submit', (e) => {
         if(validFirstName && validLastName && validEmail && validPassword) {
             e.preventDefault();
-            console.log('all gucci');
+            window.location.href = 'success.html';
         } else {
             e.preventDefault();
             validateInputFields(firstName, firstNameError);
@@ -87,7 +71,7 @@ function submitForm() {
             password.addEventListener('input', () => {
                 validateInputFields(password, passwordError);
             });
-            
+
             confirmPassword.addEventListener('input', () => {
                 confirmPsw(password, confirmPassword, confirmPasswordError);
             })
