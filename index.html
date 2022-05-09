@@ -12,92 +12,21 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <title>Register</title>
+    <title>Sign in</title>
   </head>
   <body class="flex">
     <div class="container">
-      <div class="wrapper">
-        <div class="box background__box"></div>
-
-        <div class="box form__box">
-          <div class="get-started">
-            <h2>Let's get started!</h2>
-            <h4>Create an account to get all features</h4>
-          </div>
-
-          <form
-            class="form__wrapper"
-            id="form"
-            action="#"
-            method="post"
-            novalidate
-          >
-            <div class="input__wrapper flex">
-              <span class="input__error" id="first-name-error"></span>
-              <input
-                class="input input__first-name"
-                id="first-name"
-                type="text"
-                placeholder="First name"
-                autocomplete="off"
-                spellcheck="false"
-                required
-              />
-              <span class="input__error" id="last-name-error"></span>
-              <input
-                class="input input__last-name"
-                id="last-name"
-                type="text"
-                placeholder="Last name"
-                autocomplete="off"
-                spellcheck="false"
-                required
-              />
-            </div>
-            <div class="input__wrapper">
-              <span class="input__error" id="email-error"></span>
-              <input
-                class="input input__email"
-                id="email"
-                type="email"
-                placeholder="Email address"
-                spellcheck="false"
-                required
-              />
-            </div>
-            <div class="input__wrapper">
-              <span class="input__error" id="password-error"></span>
-              <input
-                class="input input__password"
-                id="password"
-                type="password"
-                placeholder="Create password"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required
-              />
-            </div>
-            <div class="input__wrapper">
-              <span class="input__error" id="confirm-password-error"></span>
-              <input
-                class="input input__password"
-                id="confirm-password"
-                type="password"
-                placeholder="Confirm password"
-                required
-              />
-            </div>
-            <input class="button" type="submit" value="Create account" onclick="submitForm(form)"/>
-          </form>
-
-          <div class="sign-in flex">
-            <p>Already have an account?</p>
-            <strong><a href="sign-in.html">Sign in</a></strong>
-          </div>
+      <div class="wrapper sign-in__wrapper">
+        <div class="login__box flex">
+          <input class="input login__email" type="email" placeholder="E-mail" />
+          <input class="input login__password" type="password" placeholder="password" />
+          <input class="button login__button" type="submit" value="Sign in"/>
+        </div>
+        <div class="sign-up">
+          <p>Not registered yet?</p>
+          <strong><a href="sign-up.html">Sign up</a></strong>
         </div>
       </div>
     </div>
-
-    <script src="js/index.js"></script>
   </body>
 </html>

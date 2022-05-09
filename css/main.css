@@ -39,6 +39,9 @@ h4 {
   font-size: var(--font-medium);
   line-height: 0.875rem;
 }
+a {
+  color: var(--clr-black);
+}
 .flex {
   display: flex;
   justify-content: center;

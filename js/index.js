@@ -43,9 +43,10 @@ function submitForm() {
     const validLastName = validateInputFields(lastName, lastNameError);
     const validEmail = validateInputFields(email, emailError);
     const validPassword = validateInputFields(password, passwordError);
+    const isValidConfPsw = confirmPsw(password, confirmPassword, confirmPasswordError);
 
     form.addEventListener('submit', (e) => {
-        if(validFirstName && validLastName && validEmail && validPassword) {
+        if(validFirstName && validLastName && validEmail && validPassword && isValidConfPsw) {
             e.preventDefault();
             window.location.href = 'success.html';
         } else {
