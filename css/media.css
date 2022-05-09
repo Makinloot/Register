@@ -1,5 +1,21 @@
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .wrapper {
+        grid-template-columns: 1fr;
         grid-template-rows: 31.27% 1fr;
     }
-} */
+    .background__box {
+        background-position: center;
+    }
+    .form__box {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .get-started {
+        margin: 20px 0;
+    }
+    .form__wrapper {
+        margin: 0 0 60px;
+    }
+}

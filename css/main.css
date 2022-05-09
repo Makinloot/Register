@@ -41,7 +41,8 @@ h4 {
     align-items: center;
 }
 .container {
-    width: min(100% - 1rem, 662px);
+    padding: 1rem;
+    width: min(100%, 662px);
 }
 .wrapper {
     min-height: 492px;
